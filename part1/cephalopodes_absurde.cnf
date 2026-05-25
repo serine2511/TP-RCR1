@@ -1,0 +1,17 @@
+c Preuve par l'absurde : BC infere-t-elle est_pieuvre ?
+c On ajoute NOT est_pieuvre (-8) et on attend UNSATISFIABLE
+c Variables:
+c 1=a_tentacules, 2=a_manteau, 3=est_cephalopode
+c 4=vit_dans_eau, 5=a_encre
+c 6=huit_tentacules, 7=dix_tentacules
+c 8=est_pieuvre, 9=est_calmar
+p cnf 9 9
+-1 -2 3 0
+-3 4 0
+-3 5 0
+-6 8 0
+-7 9 0
+1 0
+2 0
+6 0
+-8 0

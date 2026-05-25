@@ -1,0 +1,26 @@
+c Cephalopodes Knowledge Base
+c Variables:
+c 1=a_tentacules, 2=a_manteau, 3=est_cephalopode
+c 4=vit_dans_eau, 5=a_encre
+c 6=huit_tentacules, 7=dix_tentacules
+c 8=est_pieuvre, 9=est_calmar
+c
+c Regles:
+c R1: a_tentacules AND a_manteau -> est_cephalopode
+c R2: est_cephalopode -> vit_dans_eau
+c R3: est_cephalopode -> a_encre
+c R4: huit_tentacules -> est_pieuvre
+c R5: dix_tentacules -> est_calmar
+c
+c Faits
+
+p cnf 9 9
+-1 -2 3 0
+-3 4 0
+-3 5 0
+-6 8 0
+-7 9 0
+1 0
+2 0
+6 0
+-7 0

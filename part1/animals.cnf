@@ -1,0 +1,21 @@
+c Base de connaissances sur la classification animale
+
+c Variables : 1=a_des_ailes, 2=a_des_plumes, 3=pond_des_œufs, 4=est_un_oiseau, 5=peut_voler
+
+c R1 : a_des_ailes ET a_des_plumes → est_un_oiseau
+
+c R2 : est_un_oiseau → peut_voler
+
+c R3 : est_un_oiseau → pond_des_œufs
+
+c Faits : l’animal a des ailes et des plumes
+
+
+
+p cnf 5 5
+-1 -2 4 0
+-4 5 0
+-4 3 0
+1 0
+2 0
+

@@ -1,0 +1,13 @@
+c Preuve par l'absurde : notre animal est-il un oiseau ?
+
+c On ajoute NON est un oiseau (-4) et on s'attend à UNSATISFIABLE
+
+c Variables : 1=a des ailes, 2=a des plumes, 3=pond des œufs, 4=est un oiseau, 5=peut voler
+
+p cnf 5 6
+-1 -2 4 0
+-4 5 0
+-4 3 0
+1 0
+2 0
+-4 0
